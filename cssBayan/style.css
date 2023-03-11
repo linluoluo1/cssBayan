@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* heading styles */
+.h1{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+}
+
+/* accordion styles */
+.accordion{
+    max-width: 50rem;
+    margin: 1rem auto;
+    background-color: azure;
+}
+
+.items-heading{
+    display: block;
+    cursor: pointer;
+    margin: 1rem 2rem;
+}
+
+
+
+.items {
+    border: 0.4rem solid salmon;
+}
+
+.items:hover{
+    background-color: aqua;
+    transition: 0.7s ease-out;
+}
+
+.memes-img{
+    display: none;
+}
+
+.items-input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.items-input:checked ~ .memes-img {
+    display: block;
+}
